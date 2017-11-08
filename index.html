@@ -186,20 +186,21 @@
   <div class="contact">
     <h1 class="list-nav-name">تواصل معنا</h1>
     <p>لكى تتواصل معنا يجب أن تملىء هذة البيانات</p>
-    <form action="" dir="rtl">
+    <form onsubmit="submitForm(); return false;" id="my_form" dir="rtl">
       <span>الاسم</span>
-      <input dir="rtl" type="text">
+      <input required dir="rtl" type="text" id="n">
       <br>
       <span>رقم التلفون</span>
-      <input dir="rtl" type="text">
+      <input required dir="rtl" type="text" id="p">
       <br>
       <span>البريد الالكترونى</span>
-      <input dir="rtl" type="text">
+      <input required dir="rtl" type="text" id="e">
       <br>
       <div class="msg">
         <span>اترك لنا رسالتك</span>
-        <textarea dir="rtl" rows="8" cols="42"></textarea>
-        <button>ارسال</button>
+        <textarea required dir="rtl" rows="8" cols="42" id="m"></textarea>
+        <button id="mybtn">ارسال</button>
+        <span id="status"></span>
       </div>
     </form>
     <div class="company-name-nav">
@@ -215,5 +216,6 @@
   <script src="js/jquery.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/mail.js"></script>
 </body>
 </html>
