@@ -14,6 +14,10 @@
   <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <body>
+  <!-- Loading -->
+  <div class="loading">
+    <div class="circle-loading"></div>
+  </div>
   <!-- This is nav in mobile screen  => responsive-->
   <div class="pars-menu">
     <i class="fa fa-bars" aria-hidden="true"></i>
@@ -40,6 +44,7 @@
     <ul>
       <li class="home-nav"><a href="#home"> الرئيسية</a></li>
       <li class="prouducts-nav"><a href="#prouducts"> المنتجات</a></li>
+      <li class="gallery-nav"><a href="#prouducts">معرض الصور</a></li>
       <li class="about-us-nav"><a href="#about_us">من نحن</a></li>
       <li class="contact-nav"><a href="#contact"> تواصل معنا</a></li>
     </ul>
@@ -47,8 +52,7 @@
   <!-- End Nav -->
 
   <div class="company-name">
-    <i class="fa fa-pagelines" aria-hidden="true"></i>
-    <h3>EL-RADWA <span>HERBS</span></h3>
+    <h3><i class="fa fa-pagelines" aria-hidden="true"></i>EL-RADWA <span>HERBS</span></h3>
   </div>
 
   <div class="slider single-section" id="home">
@@ -67,21 +71,26 @@
     <div class="prouducts-items">
       <!-- ROW #1 -->
       <div class="producer">
-        <div class="image" style="background-image: url('images/prouducts/black-lemon.jpg')"></div>
+        <div class="slider">
+          <div class="image" style="background-image: url('images/prouducts/black-lemon/01.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/black-lemon/02.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/black-lemon/03.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/black-lemon/04.jpg')"></div>
+        </div>
         <h2>ليمون اسود مجفف</h2>
       </div>
       <div class="producer">
         <div class="slider">
-          <div class="image" style="background-image: url('images/prouducts/lemon/yellow.lemon.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/01.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/02.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/03.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/04.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/05.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/06.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/07.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/08.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/lemon/09.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/yellow.lemon.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/01.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/02.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/03.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/04.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/05.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/06.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/07.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/08.jpg')"></div>
+          <div class="image" style="background-image: url('images/prouducts/yellow-lemon/09.jpg')"></div>
         </div>
         <h2>ليمون اصفر مجفف</h2>
       </div>
@@ -143,7 +152,7 @@
       </div>
       <!-- ROW #6 -->
       <div class="producer">
-        <div class="image" style="background-image: url('images/prouducts/pepper.jpg')"></div>
+        <div class="image" style="background-image: url('images/.jpg')"></div>
         <h2>فلفل بلدى</h2>
       </div>
       <div class="producer">
@@ -156,6 +165,18 @@
     </div>
   </div>
   <!-- End prouducts -->
+  <!-- Gallery -->
+  <div class="gallery">
+    <h1 class="list-nav-name">معرض الصور</h1>
+    <div class="flex-gallery">
+      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+    </div>
+  </div>
   <!-- about us -->
   <div class="about-us single-section" id="about_us">
     <h1 class="list-nav-name">من نحن</h1>
@@ -163,7 +184,7 @@
     <div>اسم المصدر <i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
     <span class="icons"><i class="fa fa-user" aria-hidden="true"></i></span>
     <br/>
-    <h2>مكتب الرضوة للاستيراد والتصدير</h2>
+    <h2>مكتب الرضوى للاستيراد والتصدير</h2>
     <div>السمة التجارية <i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
     <span class="icons"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
     <br/>

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.loading').fadeOut()
   $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2500,
@@ -9,6 +10,8 @@ $(document).ready(function(){
   if($(document).scrollTop(0)){
     $('li.home-nav').addClass('active')
   }
+  // Contact height
+  $('.contact').outerHeight('100vh' - heightNav)
 });
 
 ///////////////////////////
@@ -49,7 +52,7 @@ scrollItems = menuItems.map(function(){
 menuItems.click(function(e){
  var href = $(this).attr("href"),
      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
- $('html, body').stop().animate({ 
+ $('html, body').stop().animate({
      scrollTop: offsetTop
  }, 850);
  e.preventDefault();
@@ -59,7 +62,7 @@ menuItems.click(function(e){
 $(window).scroll(function(){
   // Get container scroll position
   var fromTop = $(this).scrollTop()+topMenuHeight;
-  
+
   // Get id of current scroll item
   var cur = scrollItems.map(function(){
     if ($(this).offset().top < fromTop)
@@ -68,22 +71,12 @@ $(window).scroll(function(){
   // Get the id of the current element
   cur = cur[cur.length-1];
   var id = cur && cur.length ? cur[0].id : "";
-  
+
   if (lastId !== id) {
       lastId = id;
       // Set/remove active class
       menuItems
         .parent().removeClass("active")
         .end().filter(`[href="#${id}"]`).parent().addClass("active");
-  }                   
+  }
 });
-
-
-
-
-
-
-
-
-
-

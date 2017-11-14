@@ -25,7 +25,34 @@ html, body
 body
   margin: 0
   padding: 0
+// Loading animate
+.loading
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0.98)
+  z-index: 99999
+  display: flex
+  .circle-loading
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    border-top: 7px solid $color-2
+    border-bottom: 7px solid transparent
+    border-left: 7px solid transparent
+    border-right: 7px solid transparent
+    margin: auto
+    transform: translate(50%, 50%)
+    animation: loading .6s linear infinite
 
+    @keyframes loading
+      0%
+        transform: rotate(0deg)
+      100%
+        transform: rotate(360deg)
+// End loading
 .pars-menu, .menu-phone
   display: none
 nav
@@ -79,11 +106,9 @@ nav
   left: 50%
   transform: translate(-50%, -50%)
   i
-    font-size: 90px
+    font-size: 100px
+    margin-right: 10px
     color: $color-3
-    position: absolute
-    top: 2vh
-    left: -2vw
   h3
     margin-left: 15px
     font-size: 120px
@@ -159,6 +184,24 @@ nav
       background-size: cover
       background-repeat: no-repeat
 // End prouducts
+// gallery
+.gallery
+  .flex-gallery
+    width: 75%
+    margin: 40px auto 0
+    padding-bottom: 40px
+    display: flex
+    flex-wrap: wrap
+    .img-gallery
+      width: 32%
+      height: 200px
+      margin: 0.5%
+      border: 1px solid #eee
+      cursor: pointer
+      &:hover
+        border: 1px solid #ddd
+
+// End gallery
 // about-us
 .about-us
   width: 100vw
@@ -204,11 +247,13 @@ nav
   position: absolute
   top: 60px
   left: 50px
+  width: 40vh
+  height: 40vh
 // End about-us
 // contact form
 .contact
   width: 100vw
-  min-height: 100vh
+  // max-height: 100vh
   background-color: $color-1
   padding: 30px 40px 20px 70px
   text-align: right
@@ -251,10 +296,8 @@ nav
         resize: none
         color: $white
       button
-        position: absolute
-        bottom: 2px
-        left: 510px
         padding: 12px 30px
+        margin: 80px 80px 0
         font-size: 32px
         background-color: $color-1
         border: 2px solid $color-3
@@ -283,13 +326,12 @@ nav
       left: -85px
 
   .copyright
-    position: absolute
-    bottom: 10px
-    left: 10px
+    text-align: left
     color: #b8b8b8
     font-size: 14px
     font-family: $roboto
     letter-spacing: 1px
+    margin-top: 20px
     span
       font-weight: bold
       letter-spacing: 1px
