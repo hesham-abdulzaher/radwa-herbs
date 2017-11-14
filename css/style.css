@@ -169,19 +169,19 @@ nav {
       background-size: cover;
       background-repeat: no-repeat; }
 
-.gallery .flex-gallery {
+#gallery .flex-gallery {
   width: 75%;
   margin: 40px auto 0;
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap; }
-  .gallery .flex-gallery .img-gallery {
+  #gallery .flex-gallery .img-gallery {
     width: 32%;
     height: 200px;
     margin: 0.5%;
     border: 1px solid #eee;
     cursor: pointer; }
-    .gallery .flex-gallery .img-gallery:hover {
+    #gallery .flex-gallery .img-gallery:hover {
       border: 1px solid #ddd; }
 
 .about-us {
