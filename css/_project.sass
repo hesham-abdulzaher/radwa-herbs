@@ -164,7 +164,12 @@ nav
   padding-bottom: 40px
   display: flex
   flex-wrap: wrap
-  .producer
+  .last-card
+    background-color: $white
+    width: 30%
+    margin: 20px auto 40px
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+  .card
     background-color: $white
     width: 30%
     margin: 20px auto 40px
@@ -183,29 +188,85 @@ nav
       background-position: center center
       background-size: cover
       background-repeat: no-repeat
+    p
+      font-size: 0
 // End prouducts
+// EL POP UP
+#up
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 99999
+  background-color: rgba(0, 0, 0, .98)
+  display: none
+  .close
+    font-size: 30px
+    z-index: 999999
+    position: fixed
+    top: 20px
+    left: 20px
+    color: $white
+    cursor: pointer
+  .pop
+    margin: auto
+    z-index: 9999999
+    display: flex
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    .img-pop
+      background-position: center center
+      background-size: cover
+      width: 650px
+      height: 400px
+      margin-right: 5px
+    .description
+      width: 250px
+      height: 400px
+      background-color: $white
+      padding: 10px
+      display: none
+      h3
+        margin-top: 0
+        margin-bottom: 10px
+      p
+        font-size: 14px
+
+//End EL POP UP
 // gallery
 #gallery
+  background-image: url('../images/gallery/04.jpg')
+  background-size: cover
+  background-position: center center
+  background-attachment: fixed
+  padding: 40px 0
+  h1
+    background-color: rgba(255, 255, 255, .6)
+    color: $black
   .flex-gallery
-    width: 75%
+    width: 78%
     margin: 40px auto 0
-    padding-bottom: 40px
     display: flex
     flex-wrap: wrap
     .img-gallery
+      background-position: center center
+      background-size: cover
       width: 32%
-      height: 200px
+      height: 220px
       margin: 0.5%
-      border: 1px solid #eee
+      border: 2px solid $white
       cursor: pointer
-      &:hover
-        border: 1px solid #ddd
 
 // End gallery
 // about-us
 .about-us
   width: 100vw
-  height: 550px
+  height: calc(100vh - 66px)
   background-color: $white
   position: relative
   padding: 20px
@@ -233,6 +294,10 @@ nav
       float: left
       margin-top: 20px
       color: $color-3
+  p
+    font-size: 23px
+    letter-spacing: 0
+    text-align: center
 
   div
     display: inline-block !important
@@ -253,7 +318,7 @@ nav
 // contact form
 .contact
   width: 100vw
-  // max-height: 100vh
+  height: calc(100vh - 66px)
   background-color: $color-1
   padding: 30px 40px 20px 70px
   text-align: right
@@ -289,6 +354,7 @@ nav
       span
         width: 204px
       textarea
+        width: 345px
         background-color: #182f3f
         border: 2px solid #3d505d
         border-radius: 2px
@@ -310,20 +376,19 @@ nav
           border-radius: 2px
 
   .company-name-nav
-    font-size: 80px
+    font-size: 50px
     top: 200px
-    left: 150px
+    left: 80px
     h3
       span
         position: absolute
-        top: 100px
+        top: 70px
+        right: -85px
         font-size: 28px
         margin-left: 12px
     i
-      font-size: 90px
-      position: absolute
-      top: 40px
-      left: -85px
+      font-size: 70px
+      margin-right: 10px
 
   .copyright
     text-align: left

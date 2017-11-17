@@ -25,10 +25,11 @@
   <div class="menu-phone">
     <i class="fa fa-times close" aria-hidden="true"></i>
     <ul>
-      <li class="home-nav">الرئيسية</li>
-      <li class="prouducts-nav">المنتجات</li>
-      <li class="about-us-nav">من نحن</li>
-      <li class="contact-nav">تواصل معنا</li>
+      <li class="home-nav"><a href="#home"> الرئيسية</a></li>
+      <li class="prouducts-nav"><a href="#prouducts"> المنتجات</a></li>
+      <li class="gallery-nav"><a href="#gallery">معرض الصور</a></li>
+      <li class="about-us-nav"><a href="#about_us">من نحن</a></li>
+      <li class="contact-nav"><a href="#contact"> تواصل معنا</a></li>
     </ul>
     <div class="company-name-nav">
       <i class="fa fa-pagelines" aria-hidden="true"></i>
@@ -70,16 +71,15 @@
     <h1 class="list-nav-name">المنتجات</h1>
     <div class="prouducts-items">
       <!-- ROW #1 -->
-      <div class="producer">
+      <div class="card">
         <div class="slider">
           <div class="image" style="background-image: url('images/prouducts/black-lemon/01.jpg')"></div>
           <div class="image" style="background-image: url('images/prouducts/black-lemon/02.jpg')"></div>
           <div class="image" style="background-image: url('images/prouducts/black-lemon/03.jpg')"></div>
-          <div class="image" style="background-image: url('images/prouducts/black-lemon/04.jpg')"></div>
         </div>
         <h2>ليمون اسود مجفف</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="slider">
           <div class="image" style="background-image: url('images/prouducts/yellow-lemon/yellow.lemon.jpg')"></div>
           <div class="image" style="background-image: url('images/prouducts/yellow-lemon/01.jpg')"></div>
@@ -94,87 +94,101 @@
         </div>
         <h2>ليمون اصفر مجفف</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/الشمر.jpg')"></div>
         <h2>شمر</h2>
+        <p>hello</p>
       </div>
       <!-- ROW #2 -->
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/كراوية.jpg')"></div>
         <h2>كراوية</h2>
+        <p>hesham</p>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/mint.jpg')"></div>
         <h2>نعناع</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/بردقوش 2.jpg')"></div>
         <h2>بردقوش</h2>
       </div>
       <!-- ROW #3 -->
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/ينسون 2.jpg')"></div>
         <h2>يانسون</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/كركدية.jpg')"></div>
         <h2>كركدية</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/ملوخية.jpg')"></div>
         <h2>ملوخية</h2>
       </div>
       <!-- ROW #4 -->
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/مرمية.jpg')"></div>
-        <h2>مرمية</h2>
+        <h2>مرمرية</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/حبة البركة 2.jpg')"></div>
         <h2>حبةالبركة</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/لب.jpg')"></div>
         <h2>لب</h2>
       </div>
       <!-- ROW #5 -->
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/فول.jpg')"></div>
-        <h2>فول سودانى</h2>
+        <h2>فول</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/ريحانه.jpg')"></div>
         <h2>ريحان</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/بذور ريحانه.jpg')"></div>
         <h2>بذور الريحان</h2>
       </div>
       <!-- ROW #6 -->
-      <div class="producer">
-        <div class="image" style="background-image: url('images/.jpg')"></div>
+      <div class="card">
+        <div class="image" style="background-image: url('images/prouducts/pepper.jpg')"></div>
         <h2>فلفل بلدى</h2>
       </div>
-      <div class="producer">
+      <div class="card">
         <div class="image" style="background-image: url('images/prouducts/بقدونس.jpg')"></div>
         <h2>بقدونس</h2>
       </div>
-      <div class="producer" style="opacity: 0">
+      <div class="last-card" style="opacity: 0">
         <div class="image" style="background-image: url('images/prouducts/لب.jpg')"></div>
       </div>
     </div>
   </div>
   <!-- End prouducts -->
   <!-- Gallery -->
+  <!-- EL POP UP -->
+  <div id="up">
+    <i class="fa fa-times close" aria-hidden="true"></i>
+    <div class="pop">
+      <div class="img-pop" style= "background-image: url('images/01.jpg')"></div>
+      <div class="description">
+        <h3>some name:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sequi ratione assumenda commodi quo neque, cumque magnam voluptates obcaecati quam temporibus ipsa beatae modi, nobis dolorum quasi odit cupiditate! Consequuntur.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End El POP UP -->
   <div id="gallery">
     <h1 class="list-nav-name">معرض الصور</h1>
     <div class="flex-gallery">
-      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
-      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
-      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
-      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
-      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
-      <div class="img-gallery" style="background-image: url('images/new-logo.jpg')"></div>
+      <div class="img-gallery image" style="background-image: url('images/gallery/01.jpg')"></div>
+      <div class="img-gallery image" style="background-image: url('images/gallery/02.jpg')"></div>
+      <div class="img-gallery image" style="background-image: url('images/gallery/03.jpg')"></div>
+      <div class="img-gallery image" style="background-image: url('images/gallery/04.jpg')"></div>
+      <div class="img-gallery image" style="background-image: url('images/gallery/05.jpg')"></div>
+      <div class="img-gallery image" style="background-image: url('images/gallery/07.jpg')"></div>
     </div>
   </div>
   <!-- about us -->
@@ -200,6 +214,7 @@
     <div>تلفون <i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
     <span class="icons"><i class="fa fa-phone" aria-hidden="true"></i></span>
     <br/>
+    <p>سنين الخبرة ليست كثيرة ولكنا تفوقنا على انفسنا حتى اصبحنا رقم 1</p>
     <img src="images/new-logo.jpg" class="logo">
   </div>
   <!-- End About-us -->
@@ -225,8 +240,7 @@
       </div>
     </form>
     <div class="company-name-nav">
-      <i class="fa fa-pagelines" aria-hidden="true"></i>
-      <h3>EL-RADWA <span>HERBS</span></h3>
+      <h3><i class="fa fa-pagelines" aria-hidden="true"></i>EL-RADWA <span>HERBS</span></h3>
     </div>
     <div class="copyright">Copyright &copy; <span>EL-RADWA HERBS </span> all rights reserved</div>
   </div>

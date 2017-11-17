@@ -149,44 +149,104 @@ nav {
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap; }
-  .prouducts-items .producer {
+  .prouducts-items .last-card {
     background-color: #fff;
     width: 30%;
     margin: 20px auto 40px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
-    .prouducts-items .producer .slider {
+  .prouducts-items .card {
+    background-color: #fff;
+    width: 30%;
+    margin: 20px auto 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .prouducts-items .card .slider {
       width: 100%; }
-    .prouducts-items .producer h2 {
+    .prouducts-items .card h2 {
       text-align: center;
       margin: auto;
       color: #2ecc71;
       padding: 0px 20px 12px; }
-    .prouducts-items .producer .image {
+    .prouducts-items .card .image {
       width: 100%;
       height: 280px;
       margin: 0;
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat; }
+    .prouducts-items .card p {
+      font-size: 0; }
 
-#gallery .flex-gallery {
-  width: 75%;
-  margin: 40px auto 0;
-  padding-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap; }
-  #gallery .flex-gallery .img-gallery {
-    width: 32%;
-    height: 200px;
-    margin: 0.5%;
-    border: 1px solid #eee;
+#up {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.98);
+  display: none; }
+  #up .close {
+    font-size: 30px;
+    z-index: 999999;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
     cursor: pointer; }
-    #gallery .flex-gallery .img-gallery:hover {
-      border: 1px solid #ddd; }
+  #up .pop {
+    margin: auto;
+    z-index: 9999999;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #up .pop .img-pop {
+      background-position: center center;
+      background-size: cover;
+      width: 650px;
+      height: 400px;
+      margin-right: 5px; }
+    #up .pop .description {
+      width: 250px;
+      height: 400px;
+      background-color: #fff;
+      padding: 10px;
+      display: none; }
+      #up .pop .description h3 {
+        margin-top: 0;
+        margin-bottom: 10px; }
+      #up .pop .description p {
+        font-size: 14px; }
+
+#gallery {
+  background-image: url("../images/gallery/04.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 40px 0; }
+  #gallery h1 {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000; }
+  #gallery .flex-gallery {
+    width: 78%;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap; }
+    #gallery .flex-gallery .img-gallery {
+      background-position: center center;
+      background-size: cover;
+      width: 32%;
+      height: 220px;
+      margin: 0.5%;
+      border: 2px solid #fff;
+      cursor: pointer; }
 
 .about-us {
   width: 100vw;
-  height: 550px;
+  height: calc(100vh - 66px);
   background-color: #fff;
   position: relative;
   padding: 20px;
@@ -214,6 +274,10 @@ nav {
       float: left;
       margin-top: 20px;
       color: #2ecc71; }
+  .about-us p {
+    font-size: 23px;
+    letter-spacing: 0;
+    text-align: center; }
   .about-us div {
     display: inline-block !important;
     width: 200px;
@@ -233,6 +297,7 @@ nav {
 
 .contact {
   width: 100vw;
+  height: calc(100vh - 66px);
   background-color: #182F3F;
   padding: 30px 40px 20px 70px;
   text-align: right;
@@ -268,6 +333,7 @@ nav {
       .contact form .msg span {
         width: 204px; }
       .contact form .msg textarea {
+        width: 345px;
         background-color: #182f3f;
         border: 2px solid #3d505d;
         border-radius: 2px;
@@ -288,19 +354,18 @@ nav {
           color: #182F3F;
           border-radius: 2px; }
   .contact .company-name-nav {
-    font-size: 80px;
+    font-size: 50px;
     top: 200px;
-    left: 150px; }
+    left: 80px; }
     .contact .company-name-nav h3 span {
       position: absolute;
-      top: 100px;
+      top: 70px;
+      right: -85px;
       font-size: 28px;
       margin-left: 12px; }
     .contact .company-name-nav i {
-      font-size: 90px;
-      position: absolute;
-      top: 40px;
-      left: -85px; }
+      font-size: 70px;
+      margin-right: 10px; }
   .contact .copyright {
     text-align: left;
     color: #b8b8b8;
@@ -350,13 +415,12 @@ nav {
     transition: all 1s ease 0.5s; }
     .menu-phone i.close {
       font-size: 50px;
-      margin: 0 20px 20px;
+      margin: 0 20px;
       color: #f1c40f;
       transition: all 0.5s ease; }
     .menu-phone .company-name-nav {
       position: static;
-      text-align: center;
-      margin-top: 40px; }
+      text-align: center; }
       .menu-phone .company-name-nav h3 {
         font-size: 40px; }
         .menu-phone .company-name-nav h3 span {
@@ -375,6 +439,9 @@ nav {
         margin: 15px auto;
         text-align: center;
         font-size: 26px; }
+        .menu-phone ul li a {
+          text-decoration: none;
+          color: #fff; }
 
   .company-name {
     max-width: 100vw;
@@ -401,9 +468,9 @@ nav {
     .slider .img-slider {
       height: 84vh; }
 
-  .prouducts-items .producer {
+  .prouducts-items .card {
     width: 100%; }
-    .prouducts-items .producer:last-of-type {
+    .prouducts-items .card:last-of-type {
       display: none; }
 
   .about-us {
@@ -426,6 +493,10 @@ nav {
       position: static;
       width: 100vw;
       margin-top: 10px; }
+
+  #gallery .flex-gallery .img-gallery {
+    width: 100%;
+    margin-bottom: 10px; }
 
   .contact {
     padding: 20px 0;
@@ -490,7 +561,7 @@ nav {
     .slider .img-slider {
       height: 84vh; }
 
-  .prouducts-items .producer {
+  .prouducts-items .card {
     width: 48%; }
 
   .about-us {
@@ -539,5 +610,8 @@ nav {
           display: block; }
     .contact .company-name-nav {
       display: none; } }
+@media screen and (max-width: 1100px) {
+  .contact .company-name-nav {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

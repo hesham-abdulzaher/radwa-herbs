@@ -10,25 +10,50 @@ $(document).ready(function(){
   if($(document).scrollTop(0)){
     $('li.home-nav').addClass('active')
   }
-  // Contact height
-  $('.contact').outerHeight('100vh' - heightNav)
 });
+////////////////
+// when user clicked pars-menu
+$('.menu-phone li a').click(function(){
+  $('.menu-phone').css('transform', 'translateY(-700px)')
+})
 
 ///////////////////////////
 // When user Clicked on pars-menu
 $('.pars-menu').click(function(){
-  $(this).css({'transform': 'scale(3) scale(0)'})
   $('.menu-phone').css('transform', 'translateY(0)')
 })
 $('.menu-phone i.close').click(function(){
   $('.menu-phone').css('transform', 'translateY(-700px)')
-  $('.pars-menu').css({'transform': 'scale(1)'})
 })
+///////////////////////
+// When user clicked on any image from prouducts
+$('.card').click(function(){
+  $('#up').fadeIn('slow')
+  $('.pop .description').hide()
+  var srcImage = $(this).find('.image').css('background-image')
+  $('.img-pop').css('background-image', srcImage)
+})
+// when user clicked on any image from Gallery
+$('.image').click(function(){
+  $('#up').fadeIn('slow')
+  $('.pop .description').hide()
+  var srcImage = $(this).css('background-image')
+  $('.img-pop').css('background-image', srcImage)
+})
+// when user clicked any place outside img-pop
+$(document).mouseup(function(e){
+    var container = $(".pop");
+    if (!container.is(e.target) && container.has(e.target).length === 0){
+        $('#up').fadeOut()
+    }
+});
 
-
-
-
-
+///////////////////////////////
+$('.card:has(p)').click(function(){
+  // var textInP = $(this).find('p').text()
+  // $('.pop .description').text(textInP)
+  $('.pop .description').show()
+})
 
 
 
