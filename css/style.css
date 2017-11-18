@@ -299,7 +299,7 @@ nav {
   width: 100vw;
   height: calc(100vh - 66px);
   background-color: #182F3F;
-  padding: 30px 40px 20px 70px;
+  padding: 30px 40px 20px 20px;
   text-align: right;
   position: relative; }
   .contact h1 {
